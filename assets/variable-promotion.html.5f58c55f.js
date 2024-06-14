@@ -1,0 +1,13 @@
+import { r as resolveComponent, a as createElementBlock, b as createVNode, F as Fragment, d as createStaticVNode, o as openBlock } from "./app.80a2bba5.js";
+import { _ as _export_sfc } from "./plugin-vue_export-helper.5a098b48.js";
+const _sfc_main = {};
+const _hoisted_1 = /* @__PURE__ */ createStaticVNode('<h1 id="\u3010\u521D\u7EA7\u3011\u53D8\u91CF\u63D0\u5347" tabindex="-1"><a class="header-anchor" href="#\u3010\u521D\u7EA7\u3011\u53D8\u91CF\u63D0\u5347" aria-hidden="true">#</a> \u3010\u521D\u7EA7\u3011\u53D8\u91CF\u63D0\u5347</h1><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">varTest</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>\n  <span class="token keyword">var</span> x <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>\n  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>\n    <span class="token keyword">var</span> x <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>  <span class="token comment">// \u540C\u6837\u7684\u53D8\u91CF!</span>\n    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 2</span>\n  <span class="token punctuation">}</span>\n  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 2</span>\n<span class="token punctuation">}</span>\n</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div>', 2);
+function _sfc_render(_ctx, _cache) {
+  const _component_global_config = resolveComponent("global-config");
+  return openBlock(), createElementBlock(Fragment, null, [
+    _hoisted_1,
+    createVNode(_component_global_config)
+  ], 64);
+}
+var variablePromotion_html = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render]]);
+export { variablePromotion_html as default };
