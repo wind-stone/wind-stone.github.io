@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="generator" content="VuePress 2.0.0-rc.17" />
+        <meta property="og:url" content="https://blog.windstone.cc/react/render.html"><meta property="og:site_name" content="风动之石的博客"><meta property="og:title" content="React 渲染机制和原理"><meta property="og:description" content="React 渲染机制和原理 默认情况下，当一个组件重新渲染时，React 会递归地重新渲染它的所有子组件。 渲染期间调用 useState 的 set 函数等导致重新渲染的函数时，会直接重新渲染，DOM 最终统一更新 如下代码， 注意事项 React 提供了“严格模式”，开启“严格模式”后，在开发环境时每个组件的渲染函数会执行两次，来帮助组件发现有哪些..."><meta property="og:type" content="article"><meta property="og:locale" content="en-US"><meta property="og:updated_time" content="2024-10-21T08:40:51.000Z"><meta property="article:modified_time" content="2024-10-21T08:40:51.000Z"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"React 渲染机制和原理","image":[""],"dateModified":"2024-10-21T08:40:51.000Z","author":[]}</script><link rel="icon" href="/images/logo.png"><title>React 渲染机制和原理 | 风动之石的博客</title><meta name="description" content="React 渲染机制和原理 默认情况下，当一个组件重新渲染时，React 会递归地重新渲染它的所有子组件。 渲染期间调用 useState 的 set 函数等导致重新渲染的函数时，会直接重新渲染，DOM 最终统一更新 如下代码， 注意事项 React 提供了“严格模式”，开启“严格模式”后，在开发环境时每个组件的渲染函数会执行两次，来帮助组件发现有哪些...">
+        <!--vuepress-ssr-resources-->
+        <link rel="preload" href="/assets/style-CghzTOW4.css" as="style"><link rel="stylesheet" href="/assets/style-CghzTOW4.css">
+    </head>
+    <body>
+        <style>
+            #particles-js {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+            #app {
+                position: relative;
+                z-index: 1;
+            }
+            aside.sidebar {
+                background-color: transparent;
+            }
+        </style>
+        <div id="particles-js">
+            <canvas
+                class="particles-js-canvas-el"
+                style="width: 100%; height: 100%"
+                width="1203"
+                height="1329"
+            ></canvas>
+        </div>
+        <div id="app"><!--vuepress-ssr-app--></div>
+        <script type="module" src="/assets/app-Dscgj__W.js" defer></script>
+        <script src="/js/particles.js"></script>
+    </body>
+</html>

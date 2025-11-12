@@ -1,0 +1,16 @@
+import { r as resolveComponent, c as createElementBlock, b as createStaticVNode, a as createVNode, o as openBlock } from "./app-Dscgj__W.js";
+import { _ as _export_sfc } from "./plugin-vue_export-helper-1tPrXgE0.js";
+const _sfc_main = {};
+function _sfc_render(_ctx, _cache) {
+  const _component_global_config = resolveComponent("global-config");
+  return openBlock(), createElementBlock("div", null, [
+    _cache[0] || (_cache[0] = createStaticVNode('<h1 id="todo" tabindex="-1"><a class="header-anchor" href="#todo"><span>TODO</span></a></h1><h2 id="待学习列表" tabindex="-1"><a class="header-anchor" href="#待学习列表"><span>待学习列表</span></a></h2><ul><li>【done】Axios <ul><li>拦截器的设计与实现</li><li>适配器（浏览器环境、node 环境、自定义适配器）的设计与实现</li><li>如何防御 CSRF 攻击</li></ul></li><li>sentry <ul><li>上报错误时同时上报用户操作日志</li></ul></li><li>Vue 回顾 <ul><li>函数式组件</li></ul></li></ul><h2 id="总结" tabindex="-1"><a class="header-anchor" href="#总结"><span>总结</span></a></h2><ul><li>【done】webpack + uniapp</li><li>【done】package.json 里使用本地包</li><li>【done】npm info 命令</li><li>【done】npm tag</li></ul><p>注意：</p><p>gitalk 遇到<code>Error: Validation Failed.</code>，主要是因为文件名称过长，要保证文件名称不超过 50，比如<code>/front-end/js/data-structure/number/js-number-implementation.html</code>的长度是 65，需要修改成<code>/front-end/js/data-structure/number/floating</code>，长度只有 44。</p><h2 id="周会分享题目" tabindex="-1"><a class="header-anchor" href="#周会分享题目"><span>周会分享题目</span></a></h2><ul><li>redis</li></ul>', 9)),
+    createVNode(_component_global_config)
+  ]);
+}
+const todo_html = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__file", "todo.html.vue"]]);
+const data = JSON.parse('{"path":"/todo.html","title":"TODO","lang":"en-US","frontmatter":{"description":"TODO 待学习列表 【done】Axios 拦截器的设计与实现 适配器（浏览器环境、node 环境、自定义适配器）的设计与实现 如何防御 CSRF 攻击 sentry 上报错误时同时上报用户操作日志 Vue 回顾 函数式组件 总结 【done】webpack + uniapp 【done】package.json 里使用本地包 【done】npm i...","head":[["meta",{"property":"og:url","content":"https://blog.windstone.cc/todo.html"}],["meta",{"property":"og:site_name","content":"风动之石的博客"}],["meta",{"property":"og:title","content":"TODO"}],["meta",{"property":"og:description","content":"TODO 待学习列表 【done】Axios 拦截器的设计与实现 适配器（浏览器环境、node 环境、自定义适配器）的设计与实现 如何防御 CSRF 攻击 sentry 上报错误时同时上报用户操作日志 Vue 回顾 函数式组件 总结 【done】webpack + uniapp 【done】package.json 里使用本地包 【done】npm i..."}],["meta",{"property":"og:type","content":"article"}],["meta",{"property":"og:locale","content":"en-US"}],["meta",{"property":"og:updated_time","content":"2021-10-25T05:44:45.000Z"}],["meta",{"property":"article:modified_time","content":"2021-10-25T05:44:45.000Z"}],["script",{"type":"application/ld+json"},"{\\"@context\\":\\"https://schema.org\\",\\"@type\\":\\"Article\\",\\"headline\\":\\"TODO\\",\\"image\\":[\\"\\"],\\"dateModified\\":\\"2021-10-25T05:44:45.000Z\\",\\"author\\":[]}"]]},"headers":[{"level":2,"title":"待学习列表","slug":"待学习列表","link":"#待学习列表","children":[]},{"level":2,"title":"总结","slug":"总结","link":"#总结","children":[]},{"level":2,"title":"周会分享题目","slug":"周会分享题目","link":"#周会分享题目","children":[]}],"git":{"createdTime":1635140685000,"updatedTime":1635140685000,"contributors":[{"name":"wind-stone","email":"wind-stone@qq.com","commits":1}]},"readingTime":{"minutes":0.52,"words":157},"filePathRelative":"todo.md","localizedDate":"October 25, 2021","autoDesc":true}');
+export {
+  todo_html as comp,
+  data
+};

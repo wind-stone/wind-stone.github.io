@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="generator" content="VuePress 2.0.0-rc.17" />
+        <meta property="og:url" content="https://blog.windstone.cc/vue/source-study/vdom/patch-modules/"><meta property="og:site_name" content="风动之石的博客"><meta property="og:title" content="功能模块的钩子函数"><meta property="og:description" content="功能模块的钩子函数 我们在分析patch函数时，无论是元素类型的 VNode 还是组件占位 VNode，都只是分析了 DOM 节点及其子节点是如何修补的，但是没有提到 DOM 元素节点上的class/style/events等数据时如何修补的。实际上，在patchVnode的过程中，会执行很多功能模块的钩子函数，比如： create钩子：DOM 元素节..."><meta property="og:type" content="article"><meta property="og:locale" content="en-US"><meta property="og:updated_time" content="2021-06-14T18:08:13.000Z"><meta property="article:modified_time" content="2021-06-14T18:08:13.000Z"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"功能模块的钩子函数","image":[""],"dateModified":"2021-06-14T18:08:13.000Z","author":[]}</script><link rel="icon" href="/images/logo.png"><title>功能模块的钩子函数 | 风动之石的博客</title><meta name="description" content="功能模块的钩子函数 我们在分析patch函数时，无论是元素类型的 VNode 还是组件占位 VNode，都只是分析了 DOM 节点及其子节点是如何修补的，但是没有提到 DOM 元素节点上的class/style/events等数据时如何修补的。实际上，在patchVnode的过程中，会执行很多功能模块的钩子函数，比如： create钩子：DOM 元素节...">
+        <!--vuepress-ssr-resources-->
+        <link rel="preload" href="/assets/style-CghzTOW4.css" as="style"><link rel="stylesheet" href="/assets/style-CghzTOW4.css">
+    </head>
+    <body>
+        <style>
+            #particles-js {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+            #app {
+                position: relative;
+                z-index: 1;
+            }
+            aside.sidebar {
+                background-color: transparent;
+            }
+        </style>
+        <div id="particles-js">
+            <canvas
+                class="particles-js-canvas-el"
+                style="width: 100%; height: 100%"
+                width="1203"
+                height="1329"
+            ></canvas>
+        </div>
+        <div id="app"><!--vuepress-ssr-app--></div>
+        <script type="module" src="/assets/app-Dscgj__W.js" defer></script>
+        <script src="/js/particles.js"></script>
+    </body>
+</html>

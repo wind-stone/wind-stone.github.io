@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="generator" content="VuePress 2.0.0-rc.17" />
+        <meta property="og:url" content="https://blog.windstone.cc/front-end-engineering/tools/build/webpack/config/dead-code.html"><meta property="og:site_name" content="风动之石的博客"><meta property="og:title" content="dead code"><meta property="og:description" content="dead code 生产环境打包时，去掉 vConsole 背景 仅在开发模式下引入 vConsole 通常情况下，我们会在项目入口文件index.js里通过p rocess.env.NODE_ENV环境变量判断是否要引入 vConsole: 若是在打包时将 Webpack 的optimization.minimize设置为false即不使用 Ters..."><meta property="og:type" content="article"><meta property="og:locale" content="en-US"><meta property="og:updated_time" content="2024-10-31T12:47:00.000Z"><meta property="article:modified_time" content="2024-10-31T12:47:00.000Z"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"dead code","image":[""],"dateModified":"2024-10-31T12:47:00.000Z","author":[]}</script><link rel="icon" href="/images/logo.png"><title>dead code | 风动之石的博客</title><meta name="description" content="dead code 生产环境打包时，去掉 vConsole 背景 仅在开发模式下引入 vConsole 通常情况下，我们会在项目入口文件index.js里通过p rocess.env.NODE_ENV环境变量判断是否要引入 vConsole: 若是在打包时将 Webpack 的optimization.minimize设置为false即不使用 Ters...">
+        <!--vuepress-ssr-resources-->
+        <link rel="preload" href="/assets/style-CghzTOW4.css" as="style"><link rel="stylesheet" href="/assets/style-CghzTOW4.css">
+    </head>
+    <body>
+        <style>
+            #particles-js {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+            #app {
+                position: relative;
+                z-index: 1;
+            }
+            aside.sidebar {
+                background-color: transparent;
+            }
+        </style>
+        <div id="particles-js">
+            <canvas
+                class="particles-js-canvas-el"
+                style="width: 100%; height: 100%"
+                width="1203"
+                height="1329"
+            ></canvas>
+        </div>
+        <div id="app"><!--vuepress-ssr-app--></div>
+        <script type="module" src="/assets/app-Dscgj__W.js" defer></script>
+        <script src="/js/particles.js"></script>
+    </body>
+</html>

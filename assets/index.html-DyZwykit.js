@@ -1,0 +1,16 @@
+import { r as resolveComponent, c as createElementBlock, b as createStaticVNode, a as createVNode, o as openBlock } from "./app-Dscgj__W.js";
+import { _ as _export_sfc } from "./plugin-vue_export-helper-1tPrXgE0.js";
+const _sfc_main = {};
+function _sfc_render(_ctx, _cache) {
+  const _component_global_config = resolveComponent("global-config");
+  return openBlock(), createElementBlock("div", null, [
+    _cache[0] || (_cache[0] = createStaticVNode('<h1 id="css3-loading" tabindex="-1"><a class="header-anchor" href="#css3-loading"><span>CSS3-Loading</span></a></h1><p>纯 CSS 实现的饼状图 loading 等待，进度圆环</p><p>模仿自：<br> 张鑫旭--<a href="http://www.zhangxinxu.com/wordpress/2014/04/css3-pie-loading-waiting-animation/" target="_blank" rel="noopener noreferrer">http://www.zhangxinxu.com/wordpress/2014/04/css3-pie-loading-waiting-animation/</a></p><figure><img src="https://github.com/wind-stone/CSS3-Loading/raw/master/效果图.gif" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure><figure><img src="https://github.com/wind-stone/CSS3-Loading/raw/master/circle-ring-效果图.gif" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>', 5)),
+    createVNode(_component_global_config)
+  ]);
+}
+const index_html = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__file", "index.html.vue"]]);
+const data = JSON.parse('{"path":"/code-snippet/practices/css/3-%E5%8A%A0%E8%BD%BD%E8%BF%9B%E5%BA%A6%E6%95%88%E6%9E%9C/","title":"CSS3-Loading","lang":"en-US","frontmatter":{"description":"CSS3-Loading 纯 CSS 实现的饼状图 loading 等待，进度圆环 模仿自： 张鑫旭--http://www.zhangxinxu.com/wordpress/2014/04/css3-pie-loading-waiting-animation/","head":[["meta",{"property":"og:url","content":"https://blog.windstone.cc/code-snippet/practices/css/3-%E5%8A%A0%E8%BD%BD%E8%BF%9B%E5%BA%A6%E6%95%88%E6%9E%9C/"}],["meta",{"property":"og:site_name","content":"风动之石的博客"}],["meta",{"property":"og:title","content":"CSS3-Loading"}],["meta",{"property":"og:description","content":"CSS3-Loading 纯 CSS 实现的饼状图 loading 等待，进度圆环 模仿自： 张鑫旭--http://www.zhangxinxu.com/wordpress/2014/04/css3-pie-loading-waiting-animation/"}],["meta",{"property":"og:type","content":"article"}],["meta",{"property":"og:image","content":"https://github.com/wind-stone/CSS3-Loading/raw/master/效果图.gif"}],["meta",{"property":"og:locale","content":"en-US"}],["meta",{"property":"og:updated_time","content":"2021-10-25T16:43:10.000Z"}],["meta",{"property":"article:modified_time","content":"2021-10-25T16:43:10.000Z"}],["script",{"type":"application/ld+json"},"{\\"@context\\":\\"https://schema.org\\",\\"@type\\":\\"Article\\",\\"headline\\":\\"CSS3-Loading\\",\\"image\\":[\\"https://github.com/wind-stone/CSS3-Loading/raw/master/效果图.gif\\",\\"https://github.com/wind-stone/CSS3-Loading/raw/master/circle-ring-效果图.gif\\"],\\"dateModified\\":\\"2021-10-25T16:43:10.000Z\\",\\"author\\":[]}"]]},"headers":[],"git":{"createdTime":1612941360000,"updatedTime":1635180190000,"contributors":[{"name":"wind-stone","email":"wind-stone@qq.com","commits":1}]},"readingTime":{"minutes":0.18,"words":55},"filePathRelative":"code-snippet/practices/css/3-加载进度效果/README.md","localizedDate":"February 10, 2021","autoDesc":true}');
+export {
+  index_html as comp,
+  data
+};

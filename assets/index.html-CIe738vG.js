@@ -1,0 +1,16 @@
+import { r as resolveComponent, c as createElementBlock, b as createStaticVNode, a as createVNode, o as openBlock } from "./app-Dscgj__W.js";
+import { _ as _export_sfc } from "./plugin-vue_export-helper-1tPrXgE0.js";
+const _sfc_main = {};
+function _sfc_render(_ctx, _cache) {
+  const _component_global_config = resolveComponent("global-config");
+  return openBlock(), createElementBlock("div", null, [
+    _cache[0] || (_cache[0] = createStaticVNode('<h1 id="css-bread-crumbs" tabindex="-1"><a class="header-anchor" href="#css-bread-crumbs"><span>CSS-Bread-Crumbs</span></a></h1><p>纯 CSS 实现的面包屑导航</p><p>参考链接：<br> 中文：<a href="http://www.cnblogs.com/submerge/archive/2014/10/22/4044341.html" target="_blank" rel="noopener noreferrer">http://www.cnblogs.com/submerge/archive/2014/10/22/4044341.html</a></p><p>英文原文：<a href="http://line25.com/tutorials/how-to-create-flat-style-breadcrumb-links-with-css" target="_blank" rel="noopener noreferrer">http://line25.com/tutorials/how-to-create-flat-style-breadcrumb-links-with-css</a></p><figure><img src="https://github.com/wind-stone/CSS-Bread-Crumbs/raw/master/效果图.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>', 5)),
+    createVNode(_component_global_config)
+  ]);
+}
+const index_html = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__file", "index.html.vue"]]);
+const data = JSON.parse('{"path":"/code-snippet/practices/css/4-%E9%9D%A2%E5%8C%85%E5%B1%91/","title":"CSS-Bread-Crumbs","lang":"en-US","frontmatter":{"description":"CSS-Bread-Crumbs 纯 CSS 实现的面包屑导航 参考链接： 中文：http://www.cnblogs.com/submerge/archive/2014/10/22/4044341.html 英文原文：http://line25.com/tutorials/how-to-create-flat-style-breadcrumb-lin...","head":[["meta",{"property":"og:url","content":"https://blog.windstone.cc/code-snippet/practices/css/4-%E9%9D%A2%E5%8C%85%E5%B1%91/"}],["meta",{"property":"og:site_name","content":"风动之石的博客"}],["meta",{"property":"og:title","content":"CSS-Bread-Crumbs"}],["meta",{"property":"og:description","content":"CSS-Bread-Crumbs 纯 CSS 实现的面包屑导航 参考链接： 中文：http://www.cnblogs.com/submerge/archive/2014/10/22/4044341.html 英文原文：http://line25.com/tutorials/how-to-create-flat-style-breadcrumb-lin..."}],["meta",{"property":"og:type","content":"article"}],["meta",{"property":"og:image","content":"https://github.com/wind-stone/CSS-Bread-Crumbs/raw/master/效果图.png"}],["meta",{"property":"og:locale","content":"en-US"}],["meta",{"property":"og:updated_time","content":"2021-10-25T16:43:10.000Z"}],["meta",{"property":"article:modified_time","content":"2021-10-25T16:43:10.000Z"}],["script",{"type":"application/ld+json"},"{\\"@context\\":\\"https://schema.org\\",\\"@type\\":\\"Article\\",\\"headline\\":\\"CSS-Bread-Crumbs\\",\\"image\\":[\\"https://github.com/wind-stone/CSS-Bread-Crumbs/raw/master/效果图.png\\"],\\"dateModified\\":\\"2021-10-25T16:43:10.000Z\\",\\"author\\":[]}"]]},"headers":[],"git":{"createdTime":1612941360000,"updatedTime":1635180190000,"contributors":[{"name":"wind-stone","email":"wind-stone@qq.com","commits":1}]},"readingTime":{"minutes":0.2,"words":59},"filePathRelative":"code-snippet/practices/css/4-面包屑/README.md","localizedDate":"February 10, 2021","autoDesc":true}');
+export {
+  index_html as comp,
+  data
+};

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="generator" content="VuePress 2.0.0-rc.17" />
+        <meta property="og:url" content="https://blog.windstone.cc/vue/source-study/component/extend.html"><meta property="og:site_name" content="风动之石的博客"><meta property="og:title" content="组件继承：Vue.extend"><meta property="og:description" content="组件继承：Vue.extend Vue.extend()的功能是基于传入的组件选项对象参数，创建Vue构造函数的子类。所有的内部子组件的构造函数，都是调用Vue.extend()创建出来的子类。 组件继承的步骤为： 若同一组件选项对象基于同一父类创建过子类构造函数，则直接返回缓存的子类，避免重复创建 （非生成环境下）若组件选项对象存在name，则验证组..."><meta property="og:type" content="article"><meta property="og:locale" content="en-US"><meta property="og:updated_time" content="2021-06-14T18:08:13.000Z"><meta property="article:modified_time" content="2021-06-14T18:08:13.000Z"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"组件继承：Vue.extend","image":[""],"dateModified":"2021-06-14T18:08:13.000Z","author":[]}</script><link rel="icon" href="/images/logo.png"><title>组件继承：Vue.extend | 风动之石的博客</title><meta name="description" content="组件继承：Vue.extend Vue.extend()的功能是基于传入的组件选项对象参数，创建Vue构造函数的子类。所有的内部子组件的构造函数，都是调用Vue.extend()创建出来的子类。 组件继承的步骤为： 若同一组件选项对象基于同一父类创建过子类构造函数，则直接返回缓存的子类，避免重复创建 （非生成环境下）若组件选项对象存在name，则验证组...">
+        <!--vuepress-ssr-resources-->
+        <link rel="preload" href="/assets/style-CghzTOW4.css" as="style"><link rel="stylesheet" href="/assets/style-CghzTOW4.css">
+    </head>
+    <body>
+        <style>
+            #particles-js {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+            #app {
+                position: relative;
+                z-index: 1;
+            }
+            aside.sidebar {
+                background-color: transparent;
+            }
+        </style>
+        <div id="particles-js">
+            <canvas
+                class="particles-js-canvas-el"
+                style="width: 100%; height: 100%"
+                width="1203"
+                height="1329"
+            ></canvas>
+        </div>
+        <div id="app"><!--vuepress-ssr-app--></div>
+        <script type="module" src="/assets/app-Dscgj__W.js" defer></script>
+        <script src="/js/particles.js"></script>
+    </body>
+</html>

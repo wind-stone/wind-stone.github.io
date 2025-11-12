@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="generator" content="VuePress 2.0.0-rc.17" />
+        <meta property="og:url" content="https://blog.windstone.cc/articles/line-terminator/"><meta property="og:site_name" content="风动之石的博客"><meta property="og:title" content="微信小程序里一次 JSON.parse 解析错误问题的探究"><meta property="og:description" content="微信小程序里一次 JSON.parse 解析错误问题的探究 问题描述 我们知道，在微信小程序里wx.request请求参数里的dataType默认是json，意味着我们期望接口返回的数据格式是 JSON 文本，且系统会对返回的数据自动进行一次JSON.parse。因此，若接口返回的是个值为object的 JSON 文本，那么最终我们拿到的res.dat..."><meta property="og:type" content="article"><meta property="og:image" content="https://static.yximgs.com/udata/pkg/EE-KSTACK/07c5836eb1b6dc34525c671634b1be6d.png"><meta property="og:locale" content="en-US"><meta property="og:updated_time" content="2020-08-18T18:51:41.000Z"><meta property="article:modified_time" content="2020-08-18T18:51:41.000Z"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"微信小程序里一次 JSON.parse 解析错误问题的探究","image":["https://static.yximgs.com/udata/pkg/EE-KSTACK/07c5836eb1b6dc34525c671634b1be6d.png"],"dateModified":"2020-08-18T18:51:41.000Z","author":[]}</script><link rel="icon" href="/images/logo.png"><title>微信小程序里一次 JSON.parse 解析错误问题的探究 | 风动之石的博客</title><meta name="description" content="微信小程序里一次 JSON.parse 解析错误问题的探究 问题描述 我们知道，在微信小程序里wx.request请求参数里的dataType默认是json，意味着我们期望接口返回的数据格式是 JSON 文本，且系统会对返回的数据自动进行一次JSON.parse。因此，若接口返回的是个值为object的 JSON 文本，那么最终我们拿到的res.dat...">
+        <!--vuepress-ssr-resources-->
+        <link rel="preload" href="/assets/style-CghzTOW4.css" as="style"><link rel="stylesheet" href="/assets/style-CghzTOW4.css">
+    </head>
+    <body>
+        <style>
+            #particles-js {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+            #app {
+                position: relative;
+                z-index: 1;
+            }
+            aside.sidebar {
+                background-color: transparent;
+            }
+        </style>
+        <div id="particles-js">
+            <canvas
+                class="particles-js-canvas-el"
+                style="width: 100%; height: 100%"
+                width="1203"
+                height="1329"
+            ></canvas>
+        </div>
+        <div id="app"><!--vuepress-ssr-app--></div>
+        <script type="module" src="/assets/app-Dscgj__W.js" defer></script>
+        <script src="/js/particles.js"></script>
+    </body>
+</html>

@@ -1,0 +1,109 @@
+import { r as resolveComponent, c as createElementBlock, d as createBaseVNode, a as createVNode, e as withCtx, b as createStaticVNode, o as openBlock, f as createTextVNode } from "./app-Dscgj__W.js";
+import { _ as _export_sfc } from "./plugin-vue_export-helper-1tPrXgE0.js";
+const _sfc_main = {};
+const _hoisted_1 = { class: "table-of-contents" };
+function _sfc_render(_ctx, _cache) {
+  const _component_router_link = resolveComponent("router-link");
+  const _component_global_config = resolveComponent("global-config");
+  return openBlock(), createElementBlock("div", null, [
+    _cache[9] || (_cache[9] = createBaseVNode("h1", {
+      id: "tsconfig-json",
+      tabindex: "-1"
+    }, [
+      createBaseVNode("a", {
+        class: "header-anchor",
+        href: "#tsconfig-json"
+      }, [
+        createBaseVNode("span", null, "tsconfig.json")
+      ])
+    ], -1)),
+    createBaseVNode("nav", _hoisted_1, [
+      createBaseVNode("ul", null, [
+        createBaseVNode("li", null, [
+          createVNode(_component_router_link, { to: "#根级选项" }, {
+            default: withCtx(() => _cache[0] || (_cache[0] = [
+              createTextVNode("根级选项")
+            ])),
+            _: 1
+          }),
+          createBaseVNode("ul", null, [
+            createBaseVNode("li", null, [
+              createVNode(_component_router_link, { to: "#types" }, {
+                default: withCtx(() => _cache[1] || (_cache[1] = [
+                  createTextVNode("types")
+                ])),
+                _: 1
+              })
+            ])
+          ])
+        ]),
+        createBaseVNode("li", null, [
+          createVNode(_component_router_link, { to: "#编译选项" }, {
+            default: withCtx(() => _cache[2] || (_cache[2] = [
+              createTextVNode("编译选项")
+            ])),
+            _: 1
+          }),
+          createBaseVNode("ul", null, [
+            createBaseVNode("li", null, [
+              createVNode(_component_router_link, { to: "#outfile" }, {
+                default: withCtx(() => _cache[3] || (_cache[3] = [
+                  createTextVNode("outFile")
+                ])),
+                _: 1
+              })
+            ]),
+            createBaseVNode("li", null, [
+              createVNode(_component_router_link, { to: "#paths" }, {
+                default: withCtx(() => _cache[4] || (_cache[4] = [
+                  createTextVNode("paths")
+                ])),
+                _: 1
+              })
+            ]),
+            createBaseVNode("li", null, [
+              createVNode(_component_router_link, { to: "#allowjs" }, {
+                default: withCtx(() => _cache[5] || (_cache[5] = [
+                  createTextVNode("allowJs")
+                ])),
+                _: 1
+              })
+            ]),
+            createBaseVNode("li", null, [
+              createVNode(_component_router_link, { to: "#checkjs" }, {
+                default: withCtx(() => _cache[6] || (_cache[6] = [
+                  createTextVNode("checkJs")
+                ])),
+                _: 1
+              })
+            ]),
+            createBaseVNode("li", null, [
+              createVNode(_component_router_link, { to: "#baseurl" }, {
+                default: withCtx(() => _cache[7] || (_cache[7] = [
+                  createTextVNode("baseUrl")
+                ])),
+                _: 1
+              })
+            ]),
+            createBaseVNode("li", null, [
+              createVNode(_component_router_link, { to: "#extends" }, {
+                default: withCtx(() => _cache[8] || (_cache[8] = [
+                  createTextVNode("extends")
+                ])),
+                _: 1
+              })
+            ])
+          ])
+        ])
+      ])
+    ]),
+    _cache[10] || (_cache[10] = createStaticVNode('<ul><li>【强烈推荐】<a href="https://medium.com/jspoint/typescript-compilation-the-typescript-compiler-4cb15f7244bc" target="_blank" rel="noopener noreferrer">Understanding TypeScript’s “Compilation Process” &amp; the anatomy of “tsconfig.json” file to configure TypeScript Compiler</a>，文章里有对<code>tsconfig.json</code>里每一个选项的详细阐述。</li></ul><p>TypeScript 编译器通过项目的配置文件（默认是<code>tsconfig.json</code>）来查找用于参与编译的文件以及确定如何输出编译后的文件。</p><p>执行<code>tsc</code>命令时，可通过<code>--project</code>或<code>-p</code>标志来指定配置文件的路径以代替默认的路径<code>tsconfig.json</code>。</p><div class="language-sh line-numbers-mode" data-highlighter="shiki" data-ext="sh" data-title="sh" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF;">tsc</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66;"> -p</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379;"> ./tsconfig.prod.json</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div></div></div><p><code>tsconfig.json</code>所在的目录称为项目的根目录。</p><h2 id="根级选项" tabindex="-1"><a class="header-anchor" href="#根级选项"><span>根级选项</span></a></h2><p>根级选项主要是关于静态类型分析以及确定哪些文件会包含在编译过程里的配置，这些选项都是与<code>compilerOptions</code>选项平级的。</p><ul><li><code>files</code>和<code>include</code>选项里的文件都包含在编译过程里，而<code>exclude</code>选项里的文件将不会包含在编译过程里。</li><li>源码里通过<code>import</code>语句导入的模块，会自动包含在编译过程里，而不会受到<code>files</code>、<code>include</code>、<code>exclude</code>选项的影响。</li></ul><h3 id="types" tabindex="-1"><a class="header-anchor" href="#types"><span>types</span></a></h3><div class="language-json line-numbers-mode" data-highlighter="shiki" data-ext="json" data-title="json" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic;">// tsconfig.json</span></span>\n<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">{</span></span>\n<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75;">    &quot;compilerOptions&quot;</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">: {</span></span>\n<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75;">        &quot;types&quot;</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">: [ </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379;">&quot;node&quot;</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">, </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379;">&quot;moment&quot;</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;"> ]</span></span>\n<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">    }</span></span>\n<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul><li>TypeScript 将从<code>&lt;type-root&gt;</code>目录里自动引入<code>types</code>选项里的声明文件，比如<code>&lt;type-root&gt;/moment</code>。</li><li>针对通过<code>import</code>语句手动引入的包，即使该包并没有包含在<code>types</code>选项里，TypeScript 也会引入该包的类型声明文件。</li></ul><h2 id="编译选项" tabindex="-1"><a class="header-anchor" href="#编译选项"><span>编译选项</span></a></h2><p>编译选项里的各个配置选项，用于设置 TypeScript 编译器如何处理输入文件，比如：</p><ul><li>输出文件放置在哪儿</li><li>如何查找模块</li><li>是否需要输出类型声明文件、SourceMap 等</li><li>等等</li></ul><h3 id="outfile" tabindex="-1"><a class="header-anchor" href="#outfile"><span>outFile</span></a></h3><p>若是输出的模块系统不是<code>None</code>、<code>System</code>、<code>AMD</code>，而是<code>ES6</code>、<code>CommonJS</code>等，TypeScript 编译器将不会产生一个打包文件。</p><p>文件的引入位置问题，导致<code>CommonJS</code>和<code>ES6</code>模块不能打包成一个文件。若是编译后的<code>x.js</code>里存在一行导入语句<code>require(&#39;./src/y&#39;)</code>，这表明代码运行时将会从相对于<code>x.js</code>的<code>dir</code>目录导入<code>y.js</code>文件。但若是这些文件都打包到单个文件里，由于<code>x.js</code>和<code>y.js</code>现在处于同一个目录下的同一个文件里，将无法完成从<code>dir</code>目录导入<code>y.js</code>文件。像 Webpack 这样的打包器会在最终的打包文件里添加额外的模块加载代码来完成这个功能，但是 TypeScript 没有这么做。</p><p>wind-stone 注释: 从技术上来说，TypeScript 也能实现与 Webpack 类似的打包功能，但是 TypeScript 的定位不是打包器，因此并没有实现这些功能。</p><h3 id="paths" tabindex="-1"><a class="header-anchor" href="#paths"><span>paths</span></a></h3><p><code>paths</code>作模块映射时，需要注意最终编译后文件里引入的模块名称是映射前的名称。</p><p>项目目录结构:</p><div class="language-txt line-numbers-mode" data-highlighter="shiki" data-ext="txt" data-title="txt" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>project</span></span>\n<span class="line"><span>├── a.ts</span></span>\n<span class="line"><span>└── src/</span></span>\n<span class="line"><span>   └── b.ts</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-json line-numbers-mode" data-highlighter="shiki" data-ext="json" data-title="json" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic;">// tsconfig.json</span></span>\n<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">{</span></span>\n<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75;">    &quot;compilerOptions&quot;</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">: {</span></span>\n<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75;">        &quot;outDir&quot;</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379;">&quot;dist&quot;</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">,</span></span>\n<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75;">        &quot;baseUrl&quot;</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379;">&quot;.&quot;</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">,</span></span>\n<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75;">        &quot;paths&quot;</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">: {</span></span>\n<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75;">            &quot;box&quot;</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">: [ </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379;">&quot;src/b&quot;</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;"> ]</span></span>\n<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">        }</span></span>\n<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">    }</span></span>\n<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-ts line-numbers-mode" data-highlighter="shiki" data-ext="ts" data-title="ts" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic;">// a.ts</span></span>\n<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD;">import</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;"> { </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75;">b</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;"> } </span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD;">from</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379;"> &#39;box&#39;</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">;</span></span>\n<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#E5C07B;">console</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">.</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF;">log</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">( </span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75;">b</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;"> );</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-ts line-numbers-mode" data-highlighter="shiki" data-ext="ts" data-title="ts" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic;">// src/b.ts</span></span>\n<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD;">export</span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD;"> const</span><span style="--shiki-light:#986801;--shiki-dark:#E5C07B;"> b</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2;"> =</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379;"> &#39;B&#39;</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">;</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-js line-numbers-mode" data-highlighter="shiki" data-ext="js" data-title="js" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic;">// dist/a.js`</span></span>\n<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD;">var</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75;"> box_1</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2;"> =</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF;"> require</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">(</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379;">&quot;box&quot;</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">);</span></span>\n<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#E5C07B;">console</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">.</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF;">log</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">(</span><span style="--shiki-light:#383A42;--shiki-dark:#E5C07B;">box_1</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">.</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75;">b</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">);</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>打包后的<code>dist/a.js</code>文件里，<code>require</code>的仍然是<code>box</code>，而不是<code>src/b</code>。解决方案可参见<a href="https://medium.com/jspoint/typescript-compilation-the-typescript-compiler-4cb15f7244bc" target="_blank" rel="noopener noreferrer">Understanding TypeScript’s “Compilation Process” &amp; the anatomy of “tsconfig.json” file to configure TypeScript Compiler</a>的<code>paths</code>章节。</p><h3 id="allowjs" tabindex="-1"><a class="header-anchor" href="#allowjs"><span>allowJs</span></a></h3><p><code>allowJs</code>编译选项告知 TypeScript 编译器将<code>.js</code>文件包含在编译过程里，这将应用到<code>files</code>和<code>include</code>选项以及<code>import</code>语句里的<code>.js</code>文件。</p><div class="language-ts line-numbers-mode" data-highlighter="shiki" data-ext="ts" data-title="ts" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD;">import</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75;"> xyz</span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD;"> from</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379;"> &#39;./xyz&#39;</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF;">;</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div></div></div><p>当在<code>import</code>语句里引入<code>xyz</code>模块时，TypeScript 编译器会查找<code>./xyz.ts</code>、<code>./xyz.d.ts</code>以及<code>./xyz.js</code>文件。</p><h3 id="checkjs" tabindex="-1"><a class="header-anchor" href="#checkjs"><span>checkJs</span></a></h3><p>设置<code>allowJs</code>为<code>true</code>，<code>.js</code>文件可以包含在编译过程里，但是 TypeScript 编译器并不会在编译过程里对<code>.js</code>文件里的代码做类型检查。</p><p>设置<code>checkJs</code>为<code>true</code>，TypeScript 编译器将对<code>.js</code>文件做类型检查。</p><h3 id="baseurl" tabindex="-1"><a class="header-anchor" href="#baseurl"><span>baseUrl</span></a></h3><div class="language-ts line-numbers-mode" data-highlighter="shiki" data-ext="ts" data-title="ts" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD;">import</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75;"> world</span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD;"> from</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379;"> &#39;src/world&#39;</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div></div></div><p>当设置<code>baseUrl</code>时，若<code>import</code>语音引入了一个非相对路径的模块比如<code>src/world</code>，TypeScript 编译器会首先在<code>baseUrl</code>目录里寻找<code>src/world</code>模块，如果找不到，才会去<code>typeRoots</code>设置的目录里（比如<code>node_modules</code>）查找。</p><h3 id="extends" tabindex="-1"><a class="header-anchor" href="#extends"><span>extends</span></a></h3><p>从其他<code>tsconfig.json</code>文件继承配置。</p>', 39)),
+    createVNode(_component_global_config)
+  ]);
+}
+const tsconfigJson_html = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__file", "tsconfig-json.html.vue"]]);
+const data = JSON.parse('{"path":"/typescript/usage/tsconfig-json.html","title":"tsconfig.json","lang":"en-US","frontmatter":{"description":"tsconfig.json 【强烈推荐】Understanding TypeScript’s “Compilation Process” & the anatomy of “tsconfig.json” file to configure TypeScript Compiler，文章里有对tsconfig.json里每一个选项的详细阐述。 TypeSc...","head":[["meta",{"property":"og:url","content":"https://blog.windstone.cc/typescript/usage/tsconfig-json.html"}],["meta",{"property":"og:site_name","content":"风动之石的博客"}],["meta",{"property":"og:title","content":"tsconfig.json"}],["meta",{"property":"og:description","content":"tsconfig.json 【强烈推荐】Understanding TypeScript’s “Compilation Process” & the anatomy of “tsconfig.json” file to configure TypeScript Compiler，文章里有对tsconfig.json里每一个选项的详细阐述。 TypeSc..."}],["meta",{"property":"og:type","content":"article"}],["meta",{"property":"og:locale","content":"en-US"}],["meta",{"property":"og:updated_time","content":"2021-10-24T03:16:16.000Z"}],["meta",{"property":"article:modified_time","content":"2021-10-24T03:16:16.000Z"}],["script",{"type":"application/ld+json"},"{\\"@context\\":\\"https://schema.org\\",\\"@type\\":\\"Article\\",\\"headline\\":\\"tsconfig.json\\",\\"image\\":[\\"\\"],\\"dateModified\\":\\"2021-10-24T03:16:16.000Z\\",\\"author\\":[]}"]]},"headers":[{"level":2,"title":"根级选项","slug":"根级选项","link":"#根级选项","children":[{"level":3,"title":"types","slug":"types","link":"#types","children":[]}]},{"level":2,"title":"编译选项","slug":"编译选项","link":"#编译选项","children":[{"level":3,"title":"outFile","slug":"outfile","link":"#outfile","children":[]},{"level":3,"title":"paths","slug":"paths","link":"#paths","children":[]},{"level":3,"title":"allowJs","slug":"allowjs","link":"#allowjs","children":[]},{"level":3,"title":"checkJs","slug":"checkjs","link":"#checkjs","children":[]},{"level":3,"title":"baseUrl","slug":"baseurl","link":"#baseurl","children":[]},{"level":3,"title":"extends","slug":"extends","link":"#extends","children":[]}]}],"git":{"createdTime":1619363540000,"updatedTime":1635045376000,"contributors":[{"name":"wind-stone","email":"wind-stone@qq.com","commits":1}]},"readingTime":{"minutes":3.34,"words":1002},"filePathRelative":"typescript/usage/tsconfig-json.md","localizedDate":"April 25, 2021","autoDesc":true}');
+export {
+  tsconfigJson_html as comp,
+  data
+};
